@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App wrapper */
+.app {
+    width: 100%;
+    max-width: 520px;   /* 🔥 bigger */
+}
+
+/* Main card */
+.card {
+    background: rgba(255, 255, 255, 0.97);
+    padding: 40px 35px; /* 🔥 more breathing space */
+    border-radius: 24px; /* smoother corners */
+    box-shadow: 
+        0 25px 60px rgba(0,0,0,0.18),
+        inset 0 0 0 1px rgba(255,255,255,0.4);
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    color: #2d3436;
+    letter-spacing: 0.5px;
+}
+
+/* Search */
+.search-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6c5ce7;
+}
+
+
+button {
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #6c5ce7, #5f27cd);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(108,92,231,0.35);
+}
+
+
+.weather {
+    margin-top: 30px;
+}
+
+#cityName {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+
+.temp {
+    font-size: 64px;   
+    font-weight: 700;
+    margin: 15px 0;
+    color: #6c5ce7;
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.details div {
+    background: linear-gradient(135deg, #f1f2f6, #ffffff);
+    padding: 18px;
+    border-radius: 16px;
+    width: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.details span {
+    font-size: 14px;
+    color: #636e72;
+}
+
+.details p {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3436;
+}
+
+
+.error {
+    margin-top: 20px;
+    color: #d63031;
+    font-weight: 500;
+}
+
+
+.hidden {
+    display: none;
+}
